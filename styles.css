@@ -6,7 +6,7 @@
 body{
     background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
 }
-h1{color: white; font-size: 4rem; font-family:  'Montserrat', sans-serif;}
+h1{color: white; font-size: 4rem; font-family:  'Montserrat', sans-serif;text-align: center;}
 .searchbox
 {
     height: 60vh;
