@@ -17,6 +17,7 @@ const showWeather = (data) => {
         weather.innerHTML = `<h2> City Not Found <h2>`
         return;
     }
+    document.getElementById("inputbox").style.opacity = 0.2;
     if(data.weather[0].main == "Rain")
     document.body.style.background = " url('rainy.jpg')";
     if(data.weather[0].main == "Drizzle")
