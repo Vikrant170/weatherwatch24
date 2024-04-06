@@ -5,6 +5,10 @@ const inputbox = document.querySelector("#inputbox")
 const weather = document.querySelector(".weather-ui")
    
 const getWeather = async(city) => {
+    if(city == ""){
+        weather.innerHTML = '<h2> City name is required <h2>'
+        return;
+    }
     weather.innerHTML = `<h2> Loading... <h2>`
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
     const response = await fetch(url);
